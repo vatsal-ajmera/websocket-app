@@ -10,7 +10,7 @@ class TradeController extends Controller
 {
     public function newTrade() {
 
-        Event::dispatch(new NewTrade("sasasaa"));
+        Event::dispatch(new NewTrade("430"));
         dd('New Trade Added!!');
 
     }
