@@ -21,3 +21,6 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 Broadcast::channel('one-to-one-chat', function ($user) {
     return !is_null($user);
 });
+Broadcast::channel('presence-channel-message', function ($user) {
+    return $user;
+});

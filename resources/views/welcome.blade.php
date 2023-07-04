@@ -134,12 +134,29 @@
 
         <script src="{{ Vite::asset('resources/js/app.js') }}"></script>
         <script>
-            Echo.private('one-to-one-chat').listen('PrivateChannelMessage', (e) => {
-                // console.log("sasaasaas", e.trade);
-                // $('#trade-data').html(e.trade);
+            // Echo.private('one-to-one-chat').listen('PrivateChannelMessage', (e) => {
+            //     // console.log("sasaasaas", e.trade);
+            //     // $('#trade-data').html(e.trade);
                 
-                document.getElementById('trade-data').innerHTML = e.message;
-            });
+            //     document.getElementById('trade-data').innerHTML = e.message;
+            // });
+
+            // Echo.join('presence-channel-message')
+            // .here(($users) => {
+            //     console.log($users);
+            // })
+            // .joining(($user) => {
+            //     console.log($user.name+ ' Joined the Conversion.');
+            // })
+            // .leaving(($user) => {
+            //     console.log($user.name+ ' Left the Conversion.');
+            // })
+            // .listen('PresenceMessageEvent', (e) => {
+            //     // console.log("sasaasaas", e.trade);
+            //     // $('#trade-data').html(e.trade);
+                
+            //     document.getElementById('trade-data').innerHTML = e.message;
+            // });
         </script>
     </body>
 </html>
